@@ -6,6 +6,8 @@
     <title>Nepal Tours and Trips</title>
     <link rel="icon" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./Nepal.css">
+    <link rel="stylesheet" href="./holiday_types_inner.css">
+     <link rel="stylesheet" href="./package_listing.css">
     <!-- bootstrp -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
@@ -43,10 +45,10 @@
         <!-- NAV LINKS -->
         <ul class="navbar-nav flex-row ms-auto gap-3 align-items-center">
           <!-- MEDIUM & UP -->
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link " href="./home.html">Home</a>
           </li>
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link " href="./about.html">About</a>
           </li>
 
@@ -69,7 +71,7 @@
             </ul>
           </li>
 
-          <li class="nav-item dropdown d-none d-lg-block">
+          <li class="nav-item  dropdown d-none d-lg-block">
             <a
               class="nav-link active dropdown-toggle"
               href="#"
@@ -237,24 +239,17 @@
         </select>
       </div>
 <div class="col-md-3 d-grid">
-       <button class="uiverseButton">
- Search 
-  <div class="iconButton">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
-      </div>
+            <button class="contactButton">
+              Search
+              <div class="iconButton">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
 
     </div>
   </div>
@@ -355,7 +350,7 @@
 
 
 <!-- nepal-hero-content -->
-<section class="nepal-hero-content mt-4">
+<section class="nepal-hero-content nepal mt-4">
     <section class="hero">
         <div class="overlay"></div>
 
@@ -379,136 +374,197 @@
     </section>
 </section>
 <!-- best-nepal-deals -->
-<section class="popular-packages deals-grid text-center components">
- <h2 class="green-title" id="packagesTitle">
-  Recommended <span class="orange-text">Packages</span>
-</h2>
+   <section class="packages-wrapper">
+      <header class="page-header">
+         <h1 class="green-title" id="packagesTitle">
+  Recommended <span class="orange-text">Packages</span> 
+</h1>
+       </header>
+       <br>
 
-  <br>
 
 <div class="package-grid-wrapper">
-  <ul class="package-grid" id="packageGrid">
+  <div class="packages-grid  mx-auto" id="packageGrid">
 
-
-    <!-- CARD TEMPLATE (REUSED) -->
-    <li class="package-card deal-card">
-      <div class="deal-image">
-        <a href="./package-inner.html">
-          <img src="./assets/images/pop-pack-1.png" alt="Classic Nepal Tour Package">
-        </a>
-        <span class="deal-badge red-badge">BEST SELLING</span>
+    <!-- CARD -->
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
       </div>
 
       <div class="card-content">
-        <a href="./package-inner.html"><h4>Classic Nepal Tour</h4></a>
-        <div class="row mt-4">
-          <div class="col-12 col-md-6 card-content-left">
-            <p>Destination</p>
-            <p>Nepal</p>
-            <p>Activities</p>
-            <p>Tour and Adventure</p>
-            <p class="days">4 days</p>
-          </div>
-          <div class="col-12 col-md-6 card-content-right">
-            <p>Accomodations</p>
-            <p>Hotels</p>
-            <p>Difficulty-level</p>
-            <p>Moderate to Difficult</p>
-            <br><br>
-            <button class="explore_btn" onclick="goToPage('./package-inner.html')">
-              <p>Explore</p>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </li>
+        <h3 class="title">Classic Nepal Tour</h3>
 
-    <!-- INITIAL 3 CARDS -->
-   <li class="package-card deal-card">
-      <div class="deal-image">
-        <a href="./package-inner.html">
-          <img src="./assets/images/pop-pack-1.png" alt="Classic Nepal Tour Package">
-        </a>
-        <span class="deal-badge">POPULAR</span>
-      </div>
+       <div class="info-grid mx-auto">
 
-      <div class="card-content">
-        <a href="./package-inner.html"><h4>Classic Nepal Tour</h4></a>
-        <div class="row mt-4">
-          <div class="col-12 col-md-6 card-content-left">
-            <p>Destination</p>
-            <p>Nepal</p>
-            <p>Activities</p>
-            <p>Tour and Adventure</p>
-            <p class="days">4 days</p>
-          </div>
-          <div class="col-12 col-md-6 card-content-right">
-            <p>Accomodations</p>
-            <p>Hotels</p>
-            <p>Difficulty-level</p>
-            <p>Moderate to Difficult</p>
-            <br><br>
-            <button class="explore_btn" onclick="goToPage('./package-inner.html')">
-              <p>Explore</p>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="package-card deal-card">
-      <div class="deal-image">
-        <a href="./package-inner.html">
-          <img src="./assets/images/pop-pack-1.png" alt="Classic Nepal Tour Package">
-        </a>
-        <span class="deal-badge red-badge">BEST SELLING</span>
-      </div>
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
+  </div>
 
-      <div class="card-content">
-        <a href="./package-inner.html"><h4>Classic Nepal Tour</h4></a>
-        <div class="row mt-4">
-          <div class="col-12 col-md-6 card-content-left">
-            <p>Destination</p>
-            <p>Nepal</p>
-            <p>Activities</p>
-            <p>Tour and Adventure</p>
-            <p class="days">4 days</p>
-          </div>
-          <div class="col-12 col-md-6 card-content-right">
-            <p>Accomodations</p>
-            <p>Hotels</p>
-            <p>Difficulty-level</p>
-            <p>Moderate to Difficult</p>
-            <br><br>
-            <button class="explore_btn" onclick="goToPage('./package-inner.html')">
-              <p>Explore</p>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </li>
+  <div class="divider"></div>
 
-  </ul>
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+        <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
 </div>
-  <button class="uiverseButton mx-auto mt-4" id="toggleBtn">
-    Load More
-    <div class="iconButton">
-      <svg width="24" height="24" viewBox="0 0 24 24">
-        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
-      </svg>
+
+
+       
+      </div>
     </div>
-  </button>
+ <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+
+     <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+   
+ <!-- uiverse btn -->
+      
+  </div>
+  </div>
+   
 </section>
 <!-- Nepal tour types -->
  <section class="nepal-tour-types components">
@@ -1056,108 +1112,113 @@
 
 </section>
 <!-- footer -->
-<footer class="footer components">
-  <div class="container-fluid position-relative">
+ <footer class="footer ">
+    <div class="container-fluid position-relative">
 
-    <div class="footer-flex">
-      <!-- LEFT COLUMN -->
-      <div class=" footer_info footer-col">
-        <h4 class="footer-title">Himmalagari Travels</h4>
+      <div class="footer-flex flex-wrap">
+        <!-- LEFT COLUMN -->
+        <div class=" footer_info footer-col">
+          <h4 class="footer-title">Himmalagari Travels</h4>
 
-        <div class="footer-line">
-          <i class="fa-solid fa-location-dot "></i>
-          <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+          <div class="footer-line">
+            <i class="fa-solid fa-location-dot "></i>
+            <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+          </div>
+
+          <p class="footer-text">
+            Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
+            Narayanchaur – Naxal, Kathmandu – Nepal
+          </p>
+          <br>
+          <div class="footer-line">
+            <i class="fa-solid fa-envelope "></i>
+            <a href="mailto:incoming@himmalagaritravel.com">
+              incoming@himmalagaritravel.com
+            </a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369474">+977 9802369474</a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369473">+977 9802369473</a>
+
+          </div>
+
+       
+
         </div>
-
-        <p class="footer-text">
-          Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
-          Narayanchaur – Naxal, Kathmandu – Nepal
-        </p>
-        <br>
-        <div class="footer-line">
-          <i class="fa-solid fa-envelope "></i>
-          <a href="mailto:incoming@himmalagaritravel.com">
-            incoming@himmalagaritravel.com
-          </a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-          <a href="tel:+9779802369474">+977 9802369474</a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-              <a href="tel:+9779802369473">+977 9802369473</a>
-
-        </div>
-
-        <!-- STAY CONNECTED -->
-        <h4 class="footer-subtitle mt-5 stay-connected">Stay Connected</h4>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-        </div>
-
-        <!-- WE ACCEPT -->
-        <h4 class="footer-subtitle mt-4 we-accept">We Accept</h4>
-        <div class="footer-payments">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
-          <img src="./assets/images/maestro-logo-copy.png" alt="">
-        </div>
-      </div>
-
         <!-- QUICK LINKS -->
-      <div class="footer-col footer_quicklinks">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-list">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
-          <li><a href="./about.html">Legal Documents</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-        </ul>
+        <div class="footer-col footer_quicklinks">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
+            <li><a href="./about.html">Legal Documents</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- DESTINATION -->
+        <div class=" footer-col">
+          <h4 class="footer-title">Destination</h4>
+          <ul class="footer-list">
+            <li><a href="./nepal.html">Nepal</a></li>
+            <li><a href="./nepal.html">Bhutan</a></li>
+            <li><a href="./nepal.html">Tibet</a></li>
+          </ul>
+        </div>
+
+      <!-- WHITE CURVE -->
+      <div class="footer-curve mt-3">
+        <h4>Our Affiliations & Awards</h4><br>
+        <p>
+          Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
+          Unmatched Comfort, and Seamless Journeys Worldwide
+        </p>
+
+        <div class="curve-logos d-flex flex-wrap gap-5">
+          <img src="./assets/images/affiliation1.png" alt="">
+          <img src="./assets/images/affiliation2.png" alt="">
+          <img src="./assets/images/affiliation3.png" alt="">
+          <img src="./assets/images/affilisation3.png" alt="">
+
+        </div>
       </div>
-      <!-- DESTINATION -->
-      <div class=" footer-col">
-        <h4 class="footer-title">Destination</h4>
-        <ul class="footer-list">
-          <li><a href="./nepal.html">Nepal</a></li>
-          <li><a href="./nepal.html">Bhutan</a></li>
-          <li><a href="./nepal.html">Tibet</a></li>
-        </ul>
+
+     
       </div>
-    </div>
+       </div>
+  <!-- COPYRIGHT -->
+      <ul class="footer-bottom mt-4 ">
+       
+          <!-- STAY CONNECTED -->
+          <li class="footer-social">
+            <h4 class="footer-subtitle stay-connected">Stay Connected</h4>
+            <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+          </li>
 
-    <!-- WHITE CURVE -->
-    <div class="footer-curve mt-3">
-      <h4>Our Affiliations & Awards</h4><br>
-      <p>
-        Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
-        Unmatched Comfort, and Seamless Journeys Worldwide
-      </p>
-
-      <div class="curve-logos d-flex gap-5">
-        <img src="./assets/images/affiliation1.png" alt="">
-        <img src="./assets/images/affiliation2.png" alt="">
-        <img src="./assets/images/affiliation3.png" alt="">
-        <img src="./assets/images/affilisation3.png" alt="">
-        
-      </div>
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      © 2025 Himmalagari Travels. All rights reserved.
-    </div>
-
-  </div>
-</footer>
+          <!-- WE ACCEPT -->
+         <li class="footer_we_accept">
+           <h4 class="footer-subtitle we-accept">We Accept</h4>
+          <div class="footer-payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
+            <img src="./assets/images/maestro-logo-copy.png" alt="">
+          </div>
+         </li>
+           <li>Copyright &copy; 2023 Himmalagari Travels</li>
+          </ul>
+       
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

@@ -6,6 +6,8 @@
     <title>Package Listing</title>
   <link rel="icon" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./package_listing.css">
+    <!-- <link rel="stylesheet" href="./blog_listing.css"> -->
+    <link rel="stylesheet" href="./style.css">
      <!-- bootstrp -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
      <!-- font-awesome -->
@@ -44,11 +46,11 @@
         <!-- NAV LINKS -->
         <ul class="navbar-nav flex-row ms-auto gap-3 align-items-center">
           <!-- MEDIUM & UP -->
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link " href="./home.html">Home</a>
           </li>
-          <li class="nav-item d-none d-md-block">
-            <a class="nav-link active" href="./about.html">About</a>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link " href="./about.html">About</a>
           </li>
 
           <!-- DROPDOWN (LARGE ONLY) -->
@@ -239,24 +241,17 @@
         </select>
       </div>
 <div class="col-md-3 d-grid">
-       <button class="uiverseButton">
- Search 
-  <div class="iconButton">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
-      </div>
+            <button class="contactButton">
+              Search
+              <div class="iconButton">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
 
     </div>
   </div>
@@ -376,7 +371,8 @@
   </div>
 </div>
 
-  <div class="packages-grid">
+<div class="package-grid-wrapper">
+  <div class="packages-grid  mx-auto" id="packageGrid">
 
     <!-- CARD -->
     <div class="package-card">
@@ -388,7 +384,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -417,21 +413,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+        <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -449,7 +441,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -478,21 +470,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -511,7 +499,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -540,21 +528,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -563,115 +547,309 @@
        
       </div>
     </div>
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
 
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
   </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+       <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Destination</span>
+    <span class="value green">Nepal</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Accomodations</span>
+    <span class="value green">Hotels</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Activities</span>
+    <span class="value green">Tour and Adventure</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Difficulty-level</span>
+    <span class="value green">Moderate to Difficult</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+ <!-- uiverse btn -->
+      
+  </div>
+  </div>
+   <button class="uiverseButton mx-auto mt-4" id="toggleBtn">
+    Load More
+    <div class="iconButton">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+      </svg>
+    </div>
+  </button>
 </section>
    
 <!-- footer -->
-<footer class="footer components">
-  <div class="container-fluid position-relative">
 
-    <div class="footer-flex">
-      <!-- LEFT COLUMN -->
-      <div class=" footer_info footer-col">
-        <h4 class="footer-title">Himmalagari Travels</h4>
+  <footer class="footer ">
+    <div class="container-fluid position-relative">
 
-        <div class="footer-line">
-          <i class="fa-solid fa-location-dot "></i>
-          <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+      <div class="footer-flex flex-wrap">
+        <!-- LEFT COLUMN -->
+        <div class=" footer_info footer-col">
+          <h4 class="footer-title">Himmalagari Travels</h4>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-location-dot "></i>
+            <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+          </div>
+
+          <p class="footer-text">
+            Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
+            Narayanchaur – Naxal, Kathmandu – Nepal
+          </p>
+          <br>
+          <div class="footer-line">
+            <i class="fa-solid fa-envelope "></i>
+            <a href="mailto:incoming@himmalagaritravel.com">
+              incoming@himmalagaritravel.com
+            </a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369474">+977 9802369474</a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369473">+977 9802369473</a>
+
+          </div>
+
+       
+
         </div>
-
-        <p class="footer-text">
-          Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
-          Narayanchaur – Naxal, Kathmandu – Nepal
-        </p>
-        <br>
-        <div class="footer-line">
-          <i class="fa-solid fa-envelope "></i>
-          <a href="mailto:incoming@himmalagaritravel.com">
-            incoming@himmalagaritravel.com
-          </a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-          <a href="tel:+9779802369474">+977 9802369474</a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-              <a href="tel:+9779802369473">+977 9802369473</a>
-
-        </div>
-
-        <!-- STAY CONNECTED -->
-        <h4 class="footer-subtitle mt-5 stay-connected">Stay Connected</h4>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-        </div>
-
-        <!-- WE ACCEPT -->
-        <h4 class="footer-subtitle mt-4 we-accept">We Accept</h4>
-        <div class="footer-payments">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
-          <img src="./assets/images/maestro-logo-copy.png" alt="">
-        </div>
-      </div>
-
         <!-- QUICK LINKS -->
-      <div class="footer-col footer_quicklinks">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-list">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
-          <li><a href="./about.html">Legal Documents</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-        </ul>
+        <div class="footer-col footer_quicklinks">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
+            <li><a href="./about.html">Legal Documents</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- DESTINATION -->
+        <div class=" footer-col">
+          <h4 class="footer-title">Destination</h4>
+          <ul class="footer-list">
+            <li><a href="./nepal.html">Nepal</a></li>
+            <li><a href="./nepal.html">Bhutan</a></li>
+            <li><a href="./nepal.html">Tibet</a></li>
+          </ul>
+        </div>
+
+      <!-- WHITE CURVE -->
+      <div class="footer-curve mt-3">
+        <h4>Our Affiliations & Awards</h4><br>
+        <p>
+          Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
+          Unmatched Comfort, and Seamless Journeys Worldwide
+        </p>
+
+        <div class="curve-logos d-flex flex-wrap gap-5">
+          <img src="./assets/images/affiliation1.png" alt="">
+          <img src="./assets/images/affiliation2.png" alt="">
+          <img src="./assets/images/affiliation3.png" alt="">
+          <img src="./assets/images/affilisation3.png" alt="">
+
+        </div>
       </div>
-      <!-- DESTINATION -->
-      <div class=" footer-col">
-        <h4 class="footer-title">Destination</h4>
-        <ul class="footer-list">
-          <li><a href="./nepal.html">Nepal</a></li>
-          <li><a href="./nepal.html">Bhutan</a></li>
-          <li><a href="./nepal.html">Tibet</a></li>
-        </ul>
+
+     
       </div>
-    </div>
+       </div>
+  <!-- COPYRIGHT -->
+      <ul class="footer-bottom mt-4 ">
+       
+          <!-- STAY CONNECTED -->
+          <li class="footer-social">
+            <h4 class="footer-subtitle stay-connected">Stay Connected</h4>
+            <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+          </li>
 
-    <!-- WHITE CURVE -->
-    <div class="footer-curve mt-3">
-      <h4>Our Affiliations & Awards</h4><br>
-      <p>
-        Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
-        Unmatched Comfort, and Seamless Journeys Worldwide
-      </p>
+          <!-- WE ACCEPT -->
+         <li class="footer_we_accept">
+           <h4 class="footer-subtitle we-accept">We Accept</h4>
+          <div class="footer-payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
+            <img src="./assets/images/maestro-logo-copy.png" alt="">
+          </div>
+         </li>
+           <li>Copyright &copy; 2023 Himmalagari Travels</li>
+          </ul>
+       
+  </footer>
 
-      <div class="curve-logos d-flex gap-5">
-        <img src="./assets/images/affiliation1.png" alt="">
-        <img src="./assets/images/affiliation2.png" alt="">
-        <img src="./assets/images/affiliation3.png" alt="">
-        <img src="./assets/images/affilisation3.png" alt="">
-        
-      </div>
-    </div>
 
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      © 2025 Himmalagari Travels. All rights reserved.
-    </div>
 
-  </div>
-</footer>
 
-<script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+
+  </section>
+  <script>
     function goToPage(page) {
         window.location.href = page;
       }
@@ -699,21 +877,25 @@
       bottomSearch.classList.remove("active");
     }
   });
-   
-  const grid = document.getElementById("packageGrid");
-  const wrapper = document.querySelector(".package-grid-wrapper");
-  const toggleBtn = document.getElementById("toggleBtn");
-  const title = document.getElementById("packagesTitle");
+   });
+     document.addEventListener("DOMContentLoaded", function () {
+const grid = document.querySelector(".packages-grid");
+const wrapper = document.querySelector(".package-grid-wrapper");
+const toggleBtn = document.getElementById("toggleBtn");
+const title = document.getElementById("packagesTitle");
 
-  const cardTemplate = grid.children[0].outerHTML;
-  const cardsPerRow = 3;
-  let expanded = false;
+const cardsPerRow = 3;
+const cardTemplate = grid.children[0].outerHTML;
+let expanded = false;
 
-  function updateHeight() {
-    wrapper.style.maxHeight = grid.scrollHeight + "px";
-  }
+function updateHeight() {
+  requestAnimationFrame(() => {
+    wrapper.style.maxHeight = (grid.scrollHeight + 80) + "px";
+  });
+}
 
-  updateHeight();
+// initial height
+updateHeight();
 // Debounced resize to prevent too many calls
 let resizeTimer;
 window.addEventListener("resize", () => {
@@ -723,40 +905,45 @@ window.addEventListener("resize", () => {
   }, 100); // 100ms delay
 });
 
-  toggleBtn.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
 
-    if (!expanded) {
-      /* LOAD MORE */
-      for (let i = 0; i < cardsPerRow; i++) {
-        grid.insertAdjacentHTML("beforeend", cardTemplate);
-      }
-
-      requestAnimationFrame(updateHeight);
-      toggleBtn.childNodes[0].textContent = "Load Less";
-      expanded = true;
-
-    } else {
-      /* LOAD LESS */
-      const cards = [...grid.children].slice(-cardsPerRow);
-
-      cards.forEach(card => card.classList.add("removing"));
-
-      // 🔹 Smooth scroll to title
-      title.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-
-      setTimeout(() => {
-        cards.forEach(card => card.remove());
-        updateHeight();
-      }, 350);
-
-      toggleBtn.childNodes[0].textContent = "Load More";
-      expanded = false;
+  if (!expanded) {
+    /* ---------- LOAD MORE ---------- */
+    for (let i = 0; i < cardsPerRow; i++) {
+      grid.insertAdjacentHTML("beforeend", cardTemplate);
     }
-  });
+
+    requestAnimationFrame(updateHeight);
+    toggleBtn.childNodes[0].textContent = "Load Less";
+    expanded = true;
+
+  } else {
+    /* ---------- LOAD LESS ---------- */
+
+    const cardsToRemove = [...grid.children].slice(-cardsPerRow);
+
+    /* 🔹 START SCROLL FIRST */
+    title.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    /* 🔹 START FADE + COLLAPSE TOGETHER */
+    cardsToRemove.forEach(card => card.classList.add("removing"));
+
+    /* 🔹 REMOVE AFTER ANIMATION */
+    setTimeout(() => {
+      cardsToRemove.forEach(card => card.remove());
+      updateHeight(); // collapses height smoothly
+    }, 350);
+
+    toggleBtn.childNodes[0].textContent = "Load More";
+    expanded = false;
+  }
 });
+
+});
+
 
  
        const planCountry = document.getElementById("planCountry");
@@ -768,11 +955,6 @@ planCountry.addEventListener("change", function() {
   planCountryCode.value = code;
 });
 </script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-
-  </section>
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const today = new Date().toISOString().split("T")[0];
@@ -784,6 +966,6 @@ planCountry.addEventListener("change", function() {
   });
   
 </script>
-
 </body>
+
 </html>

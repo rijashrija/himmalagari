@@ -45,10 +45,10 @@
         <!-- NAV LINKS -->
         <ul class="navbar-nav flex-row ms-auto gap-3 align-items-center">
           <!-- MEDIUM & UP -->
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link " href="./home.html">Home</a>
           </li>
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link active" href="./about.html">About</a>
           </li>
 
@@ -207,7 +207,7 @@
 
     <!-- SEARCH OFFCANVAS -->
   <div class="bottom-search bottomSearch" id="bottomSearch">
-  <div class="container">
+   <div class="container-fluid px-0">
 
     <!-- FORM -->
     <form class="row g-3 align-items-end" id="navSearchForm">
@@ -242,14 +242,18 @@
         </select>
       </div>
 
-      <div class="col-md-3 d-grid">
-        <button type="submit" class="uiverseButton">
-          Search
-          <div class="iconButton">
-            <!-- SVG stays same -->
+     <div class="col-md-3 d-grid">
+            <button class="contactButton">
+              Search
+              <div class="iconButton">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </button>
           </div>
-        </button>
-      </div>
 
     </form>
   </div>
@@ -588,108 +592,113 @@
   
   </section>
 <!-- footer -->
-<footer class="footer components">
-  <div class="container-fluid position-relative">
+  <footer class="footer ">
+    <div class="container-fluid position-relative">
 
-    <div class="footer-flex">
-      <!-- LEFT COLUMN -->
-      <div class=" footer_info footer-col ">
-        <h4 class="footer-title">Himmalagari Travels</h4>
+      <div class="footer-flex flex-wrap">
+        <!-- LEFT COLUMN -->
+        <div class=" footer_info footer-col">
+          <h4 class="footer-title">Himmalagari Travels</h4>
 
-        <div class="footer-line">
-          <i class="fa-solid fa-location-dot "></i>
-          <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+          <div class="footer-line">
+            <i class="fa-solid fa-location-dot "></i>
+            <span class="fw-semibold">NEPAL (REGISTERED OFFICE)</span>
+          </div>
+
+          <p class="footer-text">
+            Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
+            Narayanchaur – Naxal, Kathmandu – Nepal
+          </p>
+          <br>
+          <div class="footer-line">
+            <i class="fa-solid fa-envelope "></i>
+            <a href="mailto:incoming@himmalagaritravel.com">
+              incoming@himmalagaritravel.com
+            </a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369474">+977 9802369474</a>
+          </div>
+
+          <div class="footer-line">
+            <i class="fa-solid fa-phone "></i>
+            <a href="tel:+9779802369473">+977 9802369473</a>
+
+          </div>
+
+       
+
         </div>
-
-        <p class="footer-text">
-          Suite 04 – 3rd Floor, BHIM Plaza, 329 Bhupi Sadak,
-          Narayanchaur – Naxal, Kathmandu – Nepal
-        </p>
-        <br>
-        <div class="footer-line">
-          <i class="fa-solid fa-envelope "></i>
-          <a href="mailto:incoming@himmalagaritravel.com">
-            incoming@himmalagaritravel.com
-          </a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-          <a href="tel:+9779802369474">+977 9802369474</a>
-        </div>
-
-        <div class="footer-line">
-          <i class="fa-solid fa-phone "></i>
-              <a href="tel:+9779802369473">+977 9802369473</a>
-
-        </div>
-      </div>
-
         <!-- QUICK LINKS -->
-      <div class="footer-col footer_quicklinks">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-list">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
-          <li><a href="./about.html">Legal Documents</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <!-- DESTINATION -->
-      <div class=" footer-col">
-        <h4 class="footer-title">Destination</h4>
-        <ul class="footer-list">
-          <li><a href="./nepal.html">Nepal</a></li>
-          <li><a href="./nepal.html">Bhutan</a></li>
-          <li><a href="./nepal.html">Tibet</a></li>
-        </ul>
-      </div>
-
-    <!-- WHITE CURVE -->
-    <div class="footer-curve mt-3">
-      <h4>Our Affiliations & Awards</h4><br>
-      <p>
-        Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
-        Unmatched Comfort, and Seamless Journeys Worldwide
-      </p>
-
-      <div class="curve-logos d-flex gap-5">
-        <img src="./assets/images/affiliation1.png" alt="">
-        <img src="./assets/images/affiliation2.png" alt="">
-        <img src="./assets/images/affiliation3.png" alt="">
-        <img src="./assets/images/affilisation3.png" alt="">
-        
-      </div>
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      © 2025 Himmalagari Travels. All rights reserved.
-    </div>
-
-  </div>
-    
-        <!-- STAY CONNECTED -->
-        <h4 class="footer-subtitle mt-5 stay-connected">Stay Connected</h4>
-        <div class="footer-social">
-          <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        <div class="footer-col footer_quicklinks">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./holiday_types_inner.html">Holiday Types</a></li>
+            <li><a href="./about.html">Legal Documents</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- DESTINATION -->
+        <div class=" footer-col">
+          <h4 class="footer-title">Destination</h4>
+          <ul class="footer-list">
+            <li><a href="./nepal.html">Nepal</a></li>
+            <li><a href="./nepal.html">Bhutan</a></li>
+            <li><a href="./nepal.html">Tibet</a></li>
+          </ul>
         </div>
 
-        <!-- WE ACCEPT -->
-        <h4 class="footer-subtitle mt-4 we-accept">We Accept</h4>
-        <div class="footer-payments">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
-          <img src="./assets/images/maestro-logo-copy.png" alt="">
+      <!-- WHITE CURVE -->
+      <div class="footer-curve mt-3">
+        <h4>Our Affiliations & Awards</h4><br>
+        <p>
+          Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,
+          Unmatched Comfort, and Seamless Journeys Worldwide
+        </p>
+
+        <div class="curve-logos d-flex flex-wrap gap-5">
+          <img src="./assets/images/affiliation1.png" alt="">
+          <img src="./assets/images/affiliation2.png" alt="">
+          <img src="./assets/images/affiliation3.png" alt="">
+          <img src="./assets/images/affilisation3.png" alt="">
+
         </div>
       </div>
-</footer>
+
+     
+      </div>
+       </div>
+  <!-- COPYRIGHT -->
+      <ul class="footer-bottom mt-4 ">
+       
+          <!-- STAY CONNECTED -->
+          <li class="footer-social">
+            <h4 class="footer-subtitle stay-connected">Stay Connected</h4>
+            <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+          </li>
+
+          <!-- WE ACCEPT -->
+         <li class="footer_we_accept">
+           <h4 class="footer-subtitle we-accept">We Accept</h4>
+          <div class="footer-payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
+            <img src="./assets/images/maestro-logo-copy.png" alt="">
+          </div>
+         </li>
+           <li>Copyright &copy; 2023 Himmalagari Travels</li>
+          </ul>
+       
+  </footer>
 <script>
  const images = document.querySelectorAll('.popup-img');
 const popup = document.getElementById('imgPopup');

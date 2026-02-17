@@ -47,10 +47,10 @@
         </a>
 
         <ul class="navbar-nav flex-row ms-auto gap-3 align-items-center">
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link active" href="./home.html">Home</a>
           </li>
-          <li class="nav-item d-none d-md-block">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link" href="./about.html">About Us</a>
           </li>
 
@@ -89,23 +89,10 @@
           </button>
 
                    
-                 <button id="inquiry-btn" class="explore_btn" 
+                 <button class="explore_btn inquiry-btn" 
             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_inquiry" class="d-none d-sm-block">
   <p>Plan Your Trip</p>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="4"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M14 5l7 7m0 0l-7 7m7-7H3"
-    ></path>
-  </svg>
+  
 </button>
 
 
@@ -129,10 +116,10 @@
             <!-- NAV LINKS -->
             <ul class="navbar-nav flex-row ms-auto hero-navbar gap-3 align-items-center">
               <!-- MEDIUM & UP -->
-              <li class="nav-item d-none d-md-block">
+              <li class="nav-item d-none d-lg-block">
                 <a class="nav-link active" href="./home.html">Home</a>
               </li>
-              <li class="nav-item d-none d-md-block">
+              <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="./about.html">About Us</a>
               </li>
 
@@ -173,25 +160,12 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
 
-                        
-                 <button id="inquiry-btn" class="explore_btn" 
+                              <button class="explore_btn inquiry-btn" 
             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_inquiry" class="d-none d-sm-block">
   <p>Plan Your Trip</p>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="4"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M14 5l7 7m0 0l-7 7m7-7H3"
-    ></path>
-  </svg>
+  
 </button>
+         
 
               <button title="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#menuCanvas">
@@ -203,8 +177,9 @@
 
         <!-- VIDEO -->
         <div class="ratio ratio-16x9 video ">
-          <iframe src="https://www.youtube.com/embed/uQQtOWd0g9s?autoplay=1&mute=1&loop=1&playlist=uQQtOWd0g9s"
+          <iframe src="https://www.youtube.com/embed/xLTCivIB4kU?autoplay=1&mute=1&loop=1&playlist=xLTCivIB4kU"
             allowfullscreen></iframe>
+            <h1>Welcome to Himalagari Travels</h1>
         </div>
 
         <div class="best-seller-card">
@@ -218,18 +193,12 @@
             <p><strong>Difficulty Level : </strong> Moderate</p>
             <p><strong>Best Season : </strong> Mar–May, Sep–Nov</p>
           </div>
-          <!-- From Uiverse.io by d4niz -->
-          <button class="contactButton mt-1" onclick="goToPage('./package-inner.html')">
-            View Packages
-            <div class="iconButton">
-              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"></path>
-              </svg>
-            </div>
-          </button>
+         
+          <button class="explore_btn inquiry-btn" onclick="goToPage('./package-inner.html')"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvas_inquiry" class="d-none d-sm-block">
+  <p>View Packages</p>
 
+</button>
         </div>
       </div>
     </section>
@@ -303,7 +272,8 @@
 
     <!-- SEARCH OFFCANVAS -->
     <div class="bottom-search bottomSearch">
-      <div class="container">
+     <div class="container-fluid px-0">
+
         <div class="row g-3 align-items-end" id="navSearchForm">
 
           <div class="col-md-3">
@@ -367,7 +337,7 @@
       <form>
   <!-- Packages & Date -->
   <div class="form-row">
-    <div class="form-group">
+    <div class="form-group col-12 col-md-6">
       <label>Packages <span>*</span></label>
       <select required>
         <option value="">Choose Packages</option>
@@ -489,17 +459,11 @@
             <div class="activity_card_content">
               <h2 class="text-center">Chase the Thrill.</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, modi?</p>
-              <p>Difficulty Level : Moderate</p>
+             
               <div class="activity_btn">
-                <button class="contactButton" onclick="goToPage('./holiday_types_inner.html')">
-                  View Trip
-                  <div class="iconButton">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                        fill="currentColor"></path>
-                    </svg>
-                  </div>
+                <button class="explore_btn inquiry-btn mx-auto" onclick="goToPage('./holiday_types_inner.html')">
+                  <p>View Trip</p>
+                 
                 </button>
               </div>
             </div>
@@ -515,17 +479,11 @@
             <div class="activity_card_content">
               <h2 class="text-center">Chase the Thrill.</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, modi?</p>
-              <p>Difficulty Level : Moderate</p>
+             
               <div class="activity_btn">
-                <button class="contactButton" onclick="goToPage('./holiday_types_inner.html')">
-                  View Trip
-                  <div class="iconButton">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                        fill="currentColor"></path>
-                    </svg>
-                  </div>
+                <button class="explore_btn inquiry-btn mx-auto" onclick="goToPage('./holiday_types_inner.html')">
+                 <p> View Trip</p>
+                 
                 </button>
               </div>
             </div>
@@ -541,17 +499,11 @@
             <div class="activity_card_content">
               <h2 class="text-center">Chase the Thrill.</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, modi?</p>
-              <p>Difficulty Level : Moderate</p>
+             
               <div class="activity_btn">
-                <button class="contactButton" onclick="goToPage('./holiday_types_inner.html')">
-                  View Trip
-                  <div class="iconButton">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                        fill="currentColor"></path>
-                    </svg>
-                  </div>
+                <button class="explore_btn inquiry-btn mx-auto" onclick="goToPage('./holiday_types_inner.html')">
+                  <p>View Trip</p>
+                 
                 </button>
               </div>
             </div>
@@ -575,7 +527,7 @@
        <br>
 
 
-  <div class="packages-grid">
+  <div class="packages-grid mx-auto">
 
     <!-- CARD -->
     <div class="package-card">
@@ -587,7 +539,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -616,21 +568,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+        <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -648,7 +596,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -677,21 +625,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -710,7 +654,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -739,21 +683,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -771,7 +711,8 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
+
 
   <div class="info">
     <span class="label">Destination</span>
@@ -800,21 +741,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -832,7 +769,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -861,21 +798,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -893,7 +826,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -922,21 +855,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -948,15 +877,8 @@
  <!-- uiverse btn -->
       
   </div>
-    <button class="contactButton mx-auto mt-4" onclick="goToPage('./package_listing.html')">
-          View More
-          <div class="iconButton">
-            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
+    <button class="explore_btn inquiry-btn mx-auto mt-4" onclick="goToPage('./package_listing.html')">
+<p> View More</p>
         </button>
 </section>
     <!-- popular packages-end -->
@@ -980,15 +902,8 @@
             travel experiences.
           </p>
           <!-- uiverse btn -->
-          <button class="contactButton" onclick="goToPage('./about.html')">
-            View More
-            <div class="iconButton">
-              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"></path>
-              </svg>
-            </div>
+          <button class="explore_btn inquiry-btn" onclick="goToPage('./about.html')">
+         <p>   View More</p>
           </button>
         </div>
 
@@ -1013,7 +928,7 @@
        <br>
 
 
-  <div class="packages-grid">
+  <div class="packages-grid mx-auto">
 
     <!-- CARD -->
     <div class="package-card">
@@ -1025,7 +940,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1054,21 +969,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+        <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1086,7 +997,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1115,21 +1026,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1148,7 +1055,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1177,21 +1084,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1200,7 +1103,7 @@
        
       </div>
     </div>
-     <div class="package-card">
+    <div class="package-card">
       <div class="image-wrapper">
         <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
         <span class="badge">POPULAR</span>
@@ -1209,7 +1112,8 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
+
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1238,21 +1142,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+       <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1261,7 +1161,7 @@
        
       </div>
     </div>
- <div class="package-card">
+    <div class="package-card">
       <div class="image-wrapper">
         <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
         <span class="badge">POPULAR</span>
@@ -1270,7 +1170,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1299,21 +1199,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-  <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1322,8 +1218,7 @@
        
       </div>
     </div>
-
-     <div class="package-card">
+       <div class="package-card">
       <div class="image-wrapper">
         <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
         <span class="badge">POPULAR</span>
@@ -1332,7 +1227,7 @@
       <div class="card-content">
         <h3 class="title">Classic Nepal Tour</h3>
 
-       <div class="info-grid">
+       <div class="info-grid mx-auto">
 
   <div class="info">
     <span class="label">Destination</span>
@@ -1361,21 +1256,17 @@
   <!-- FLOATING ELEMENTS -->
   <span class="days-badge">4 days</span>
 
-    <button class="explore-pill" onclick="goToPage('./package-inner.html')">
-  <span class="text">Explore</span>
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M14 5l7 7-7 7M21 12H3"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </span>
-</button>
+      <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-seats="12" onclick="goToPage('./package-inner.html')">
+
+                    <p>Explore</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
 
 
 </div>
@@ -1384,16 +1275,11 @@
        
       </div>
     </div>
+ <!-- uiverse btn -->
+      
   </div>
-  <button class="contactButton mx-auto mt-4" onclick="goToPage('./package_listing.html')">
-          View More
-          <div class="iconButton">
-            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
+  <button class="explore_btn inquiry-btn mx-auto mt-4" onclick="goToPage('./package_listing.html')">
+         <p> View More</p>
         </button>
 </section>
     <!-- top-family trips packages-end -->
@@ -1465,11 +1351,11 @@
       <h4>Top Travel Inspirations</h4>
       <h2 class="mb-5 green-title">Destinations and stories <span class="orange-text">Worth Exploring</span></h2>
 
-      <ul class="package-grid">
+      <ul class="packages-grid mx-auto">
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"><img src="./assets/images/pop-pack-1.png" alt="Classic Nepal Tour Package">
+            <a href="./blog.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
 
           </div>
           <div class="card-content">
@@ -1498,7 +1384,7 @@
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"><img src="./assets/images/pop-pack-2.png" alt=""></a>
+            <a href="./blog.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
 
           </div>
           <div class="card-content">
@@ -1527,7 +1413,7 @@
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"><img src="./assets/images/pop-pack-3.png" alt=""></a>
+            <a href="./blog.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
 
           </div>
           <div class="card-content">
@@ -1556,7 +1442,7 @@
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"> <img src="./assets/images/pop-pack-3.png" alt=""></a>
+            <a href="./blog.html"> <img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
 
           </div>
           <div class="card-content">
@@ -1585,7 +1471,7 @@
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"> <img src="./assets/images/pop-pack-3.png" alt=""></a>
+            <a href="./blog.html"> <img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
 
           </div>
           <div class="card-content">
@@ -1614,7 +1500,7 @@
 
         <li class="package-card deal-card">
           <div class="deal-image">
-            <a href="./blog.html"><img src="./assets/images/pop-pack-3.png" alt=""></a>
+            <a href="./blog.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
 
           </div>
           <div class="card-content">
@@ -1642,15 +1528,9 @@
         </li>
       </ul>
       <!-- uiverse btn -->
-      <button class="contactButton mx-auto mt-4" onclick="goToPage('./blog_listing.html')">
-        View More
-        <div class="iconButton">
-          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-              fill="currentColor"></path>
-          </svg>
-        </div>
+      <button class="explore_btn inquiry-btn mx-auto mt-4" onclick="goToPage('./blog_listing.html')">
+       <p> View More</p>
+      
       </button>
     </section>
 
@@ -1658,7 +1538,7 @@
     <!-- testimonial -->
     <section class="testimonial-wrapper components text-center">
       <h4>Our Happy Travellers</h4>
-      <h2 class="mb-4 green-title">What Our <span class="orange-text">Clients Say ?</span></h2>
+      <h2 class="mb-4 mx-1 green-title">What Our <span class="orange-text">Clients Say ?</span></h2>
       <div class="owl-carousel owl-theme testimonial-carousel">
 
         <div class="testimonial-card">
@@ -1670,10 +1550,12 @@
               </p>
 
             </div>
+            <a href="https://www.tripadvisor.com/" target="_blank" rel="noreferrer noopener ">
             <span class="review-booked-via">
-              <p>Booked via :</p> <a href="https://www.tripadvisor.com/" target="_blank" rel="noreferrer noopener "><img
-                  src="./assets/images/trip-advisor-logo.png" class="trip_advisor_logo" alt=""></a>
+              <p>Booked via :</p> <img
+                  src="./assets/images/trip-advisor-logo.png" class="trip_advisor_logo" alt="">
             </span>
+            </a>
             <span class="quote">
               <i class="fa-solid fa-quote-left"></i>
             </span>
@@ -1773,16 +1655,15 @@
     </section>
 
     <!-- fixed_departure -->
-         <section class="popular-packages deals-grid text-center components">
+         <!-- <section class="popular-packages fixed_dept deals-grid text-center components">
       <h4>Fixed Departure</h4>
       <h2 class="mb-5 green-title">Hassle-Free <span class="orange-text">Fixed Departure</span> Adventures.</h3>
 
-        <ul class="package-grid">
+        <ul class="packages-grid">
 
          <li class="package-card deal-card">
             <div class="deal-image">
-             <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+             <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -1809,7 +1690,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+                 
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -1829,8 +1710,7 @@
 
          <li class="package-card deal-card">
             <div class="deal-image">
-              <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+              <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -1857,7 +1737,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+                 
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -1877,8 +1757,7 @@
 
          <li class="package-card deal-card">
             <div class="deal-image">
-              <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+              <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -1905,7 +1784,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+            
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -1925,8 +1804,7 @@
 
            <li class="package-card deal-card">
             <div class="deal-image">
-              <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+              <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -1953,7 +1831,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+                
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -1973,8 +1851,7 @@
 
           <li class="package-card deal-card">
             <div class="deal-image">
-              <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+              <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -2001,7 +1878,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+                 
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -2021,8 +1898,7 @@
 
           <li class="package-card deal-card">
             <div class="deal-image">
-             <a href="./fixed_dept.html"><img src="./assets/images/pop-pack-1.png"
-                    alt="Classic Nepal Tour Package"></a>
+             <a href="./fixed_dept.html"><img src="./assets/images/everestbasecamp.jpg" alt="Nepal"></a>
                 <span class="deal-badge">POPULAR</span>
             </div>
 
@@ -2049,7 +1925,7 @@
                   <br>
 
                   <br>
-                  <!-- From Uiverse.io by satyamchaudharydev -->
+                 
                  <button
   class="explore_btn"
   data-bs-toggle="modal"
@@ -2067,7 +1943,7 @@
             </div>
           </li>
         </ul>
-        <!-- uiverse btn -->
+       
         <button class="contactButton mx-auto mt-4" onclick="goToPage('./fixed_listing.html')">
           View More
           <div class="iconButton">
@@ -2078,7 +1954,376 @@
             </svg>
           </div>
         </button>
-    </section>
+    </section> -->
+        <section class="packages-wrapper components">
+      <header class="page-header">
+         <h4 class="text-center">Fixed Departure</h4>
+      <h2 class="mb-3 green-title">Hassle-Free <span class="orange-text">Fixed Departure</span> Adventures.</h3>
+
+      </header>
+       <br>
+
+
+  <div class="packages-grid mx-auto">
+
+    <!-- CARD -->
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn "
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+ <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+     <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+
+     <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+      <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+       <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+    <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+      <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+       <div class="package-card">
+      <div class="image-wrapper">
+        <img src="./assets/images/everestbasecamp.jpg" alt="Nepal">
+        <span class="badge">POPULAR</span>
+      </div>
+
+      <div class="card-content">
+        <h3 class="title">Classic Nepal Tour</h3>
+
+      <div class="info-grid mx-auto">
+
+  <div class="info">
+    <span class="label">Trip Start Date</span>
+    <span class="value green">22 Aug 2025</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Seats Available</span>
+    <span class="value green">12</span>
+  </div>
+
+  <div class="info">
+    <span class="label">Book Before</span>
+    <span class="value green">25th Aug 2026</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <span class="label">Trip End Date</span>
+    <span class="value green">12 Aug 2025</span>
+  </div>
+
+  <!-- FLOATING ELEMENTS -->
+  <span class="days-badge">4 days</span>
+
+          <button
+  class="explore_btn"
+  data-bs-toggle="modal"
+  data-bs-target="#fixedDepartureModal"
+  data-seats="12">
+
+                    <p>Book Now</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+
+
+</div>
+
+
+       
+      </div>
+    </div>
+ <!-- uiverse btn -->
+      
+  </div>
+  <button class="explore_btn inquiry-btn mx-auto mt-4" onclick="goToPage('./fixed_listing.html')">
+       <p>   View More</p>
+    
+        </button>
+</section>
     <!-- Fixed Departure Booking Modal -->
 <div class="modal fade" id="fixedDepartureModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -2177,7 +2422,8 @@
   </div>
 </div>
 
-      <!-- faqs -->
+    <section class="parent_faq_mountain">
+        <!-- faqs -->
     <section class="faq-wrapper components">
 
       <h4 class="text-center mb-2">
@@ -2254,16 +2500,9 @@
 
       </div>
 
-      <button class="contactButton mx-auto mt-4">
-        Load More
-        <div class="iconButton">
-          <svg height="24" width="24" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-              fill="currentColor">
-            </path>
-          </svg>
-        </div>
+      <button class="explore_btn inquiry-btn mx-auto mt-4">
+        <p>Load More</p>
+      
       </button>
 
     </section>
@@ -2273,10 +2512,14 @@
   
   <!-- faqs-end-->
    <section class="parallax-divider">
-      <p class="parallax-quote">
+      <!-- <p class="parallax-quote">
     Every journey leaves a story behind — some written on maps, some on the soul.
-  </p>
-   </section>
+  </p> -->
+<div class="mountain">
+  <img src="./assets/images/mountain.png" alt="">
+
+</div>   </section>
+    </section>
   <!-- footer -->
   
   
@@ -2349,7 +2592,7 @@
           Unmatched Comfort, and Seamless Journeys Worldwide
         </p>
 
-        <div class="curve-logos d-flex gap-5">
+        <div class="curve-logos d-flex flex-wrap gap-5">
           <img src="./assets/images/affiliation1.png" alt="">
           <img src="./assets/images/affiliation2.png" alt="">
           <img src="./assets/images/affiliation3.png" alt="">
@@ -2446,19 +2689,18 @@
       }
 
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const scrollNavbar = document.querySelector('.scroll-navbar');
+ document.addEventListener('DOMContentLoaded', () => {
+  const scrollNavbar = document.querySelector('.scroll-navbar');
 
-        const scrollWrapper = document.querySelector('.scroll-wrapper');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      scrollNavbar.classList.add('hidden');  // hide navbar
+    } else {
+      scrollNavbar.classList.remove('hidden'); // show navbar
+    }
+  });
+});
 
-        scrollWrapper.addEventListener('scroll', () => {
-          if (scrollWrapper.scrollTop > 200) { // show navbar after 200px
-            scrollNavbar.classList.add('active');
-          } else {
-            scrollNavbar.classList.remove('active');
-          }
-        });
-      });
 
 
 peopleCount.addEventListener("input", () => {
