@@ -20,6 +20,10 @@
 .components {
   margin-top: 140px;
 }
+span a{
+  text-decoration: none;
+  color: black;
+}
 /* fonts */
 
 .inquiry_title {
@@ -307,6 +311,28 @@ select span {
 select.form-control,
 input.form-control {
   height: calc(1.5em + 0.75rem + 2px);
+}
+/* Base style for all select options */
+select.form-control option {
+  font-size: 11px;   /* default size */
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  select.form-control option {
+    font-size: 12px;
+  }
+}
+
+/* Very small screens (mobile) */
+@media (max-width: 480px) {
+  select.form-control option {
+    font-size: 12px;
+  }
+}
+.bottomSearch button {
+  /* clamp(min, preferred, max) */
+  font-size: clamp(13px, 2vw, 18px);
 }
 
 form input,
@@ -1022,10 +1048,12 @@ label {
 }
 .help-box {
   max-width: 360px;
+  max-width: 100%;
   padding: 22px 24px;
-
-  border-top: 2px solid #1c6408;
+  
+  border-top: 2px solid #1C6408;
   font-family: "Poppins", sans-serif;
+ 
 }
 
 .contact-list {
@@ -1062,7 +1090,7 @@ label {
 
 .tagline {
   margin: 0;
-  font-size: clamp(18px, 4%, 24px);
+      font-size: clamp(33px, 4vw, 24px);
   font-weight: 600;
   color: var(--primary-color);
   font-family: var(--font-corinthia);
@@ -1108,7 +1136,7 @@ label {
   border: none;
   background: #1c6408;
   color: white;
-  font-size: 16px;
+  font-size: clamp(14px, 1.2vw, 16px);
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
@@ -1117,6 +1145,15 @@ label {
 .price-card button:hover {
   background: #28a745;
 }
+.check-list {
+  list-style: none;  
+  padding-left: 20px;
+}
+
+.check-list li::marker {
+  content: "✔ ";
+}
+
 .help-box button {
   font-size: clamp(12px, 2.5vw, 14px);
   font-weight: 400;
@@ -1167,10 +1204,54 @@ label {
   font-weight: bold;
   cursor: pointer;
 }
+.customize_booking_content {
+  background: #fff;
+  padding: 30px;
+  padding-top: 54px;
+  width: 95%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Form layout inside modal */
+.grid-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Two column row only when space is available */
+.two-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.two-col .form-group {
+  width: 100%;
+}
+
+/* Phone field fix */
+.phone-field {
+  display: flex;
+  width: 100%;
+}
 /* right_booking */
 /* Modal basic styles */
+.modal-header{
+  flex-direction: column;
+}
 .modal-header h5 {
-  font-size: clamp(20px, 4%, 38px);
+font-size: clamp(26px, 4%, 55px);
+   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 
 #fixedBookingModal {
@@ -1354,13 +1435,44 @@ input[type="checkbox"] {
 .form-check input {
   margin: 0;
 }
-.grid-form {
+/* .grid-form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   width: 90%;
+} */
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 90%;
 }
 
+/* Full width fields */
+.full {
+  grid-column: 1 / -1;
+}
+
+/* Two column row */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 991px) {
+  .grid-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .full {
+    grid-column: 1 / -1;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
 /* 2-column items */
 .span-2 {
   grid-column: span 2;
@@ -1395,6 +1507,26 @@ input[type="checkbox"] {
 
   .features-box {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991px) {
+
+  .grid-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  /* Force full width items */
+  .full {
+    grid-column: span 1;
+  }
+
+  /* Convert 2-column rows into 1 column */
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+ .form-row {
+    flex-direction: column;
   }
 }
 /* FORM GRID */
@@ -1434,9 +1566,7 @@ input[type="checkbox"] {
 
 /* Stack on mobile */
 @media (max-width: 480px) {
-  .phone-field {
-    flex-direction: column;
-  }
+ 
 
   .country-code {
     width: 100%;
@@ -1927,9 +2057,7 @@ input[type="checkbox"] {
 #fixedDepartureModal form label span {
   color: red;
 }
-.modal-body button {
-  margin-inline: 107px;
-}
+
 /* popup_fixed_departure */
 .modal-dialog-scrollable .modal-content {
   position: absolute;
@@ -1942,20 +2070,23 @@ input[type="checkbox"] {
   background-color: var(--primary-color);
   color: white;
   border-radius: 20px;
-  padding: 5px;
-  padding-inline: 27px;
-  margin-inline: 50px;
-  font-size: clamp(13px, 1.2vw, 15px);
+  padding: 6px 16px;
+  font-size: clamp(12px, 1.2vw, 15px);
+  white-space: nowrap;
 }
+
 .fixed_dates {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  background-color: #94ce94;
-  padding-left: 0px;
-  padding: 10px;
-  position: sticky;
-  top: -16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #94ce94;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0px;
+    padding: 10px;
+    position: sticky;
+    top: -16px;
+    z-index: 10000;
 }
 .total-amount {
   /* background-color: #94ce94; */
@@ -2030,12 +2161,71 @@ input[type="checkbox"] {
   border: 2px solid #2563eb;
   color: #2563eb;
 }
+.include_popup_check-list {
+  list-style: none;
+  padding: 0;
+}
 
+.include_popup_check-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+/* This replaces the span.icon.check */
+.include_popup_check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
 .cross {
   border: 2px solid #ef4444;
   color: #ef4444;
 }
+.exclude_popup_check-list {
+  list-style: none;
+  padding: 0;
+}
 
+.exclude_popup_check-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.exclude_popup_check-list li::before {
+  content: "✕";
+  position: absolute;
+  left: 0;
+  top: 2px;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border: 2px solid #ef4444;   /* red border */
+  color: #ef4444;              /* red icon */
+}
 .plus {
   border: 2px solid #ef4444;
   color: #ef4444;

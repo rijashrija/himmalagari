@@ -230,16 +230,19 @@ html, body {
   color: var(--primary-color);
 }
 
+
 .explore_btn::after {
   position: absolute;
   content: "";
   width: 10px;
-  left: 10;
+      top: clamp(23px, 3.9vw, 33px);
+
   bottom: 10px;
   background: var(--hovered-color);
   height: 2px;
   transition: 0.3s ease-out;
 }
+
 
 .explore_btn p::before {
   position: absolute;

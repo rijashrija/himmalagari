@@ -163,7 +163,7 @@ width: 95%;
   overflow: visible !important;
   display: flex;
   font-family: var(--font-poppin);
-  background-color: #1C6408;
+  background-color: #1C6408 !important;
 }
 
 /* .navbar-nav {
@@ -204,6 +204,7 @@ width: 95%;
   transition: transform 0.4s ease;
   font-family: var(--font-poppin);
   z-index: 1050;
+  width: 50vw;
   max-width: 1020px;
   border-radius: 30px;
 }
@@ -228,7 +229,7 @@ width: 95%;
     position: relative;
     display: flex;
     font-weight: 400;
-    font-size: 6px;
+    font-size: 18px;
     gap: 0.5rem;
     align-items: center;
   }
@@ -245,7 +246,8 @@ width: 95%;
   position: absolute;
   content: "";
   width: 10px;
-  left: 10;
+      top: clamp(23px, 3.9vw, 33px);
+
   bottom: 10px;
   background: var(--hovered-color);
   height: 2px;
@@ -255,7 +257,7 @@ width: 95%;
 .explore_btn p::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "Explore";
+  content: "";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);
@@ -351,9 +353,9 @@ form button {
   margin-top: 10px;
 }
 
-form button:hover {
+/* form button:hover {
   background: #6c8b4a;
-}
+} */
 .inquiry_title span{
   color: #1C6408;
 }
@@ -783,7 +785,7 @@ width: 50% !important;
   position: absolute;
   content: "";
   width: 10px;
-  left: 10;
+   top: clamp(23px, 3.9vw, 33px);
   bottom: 10px;
   background: var(--hovered-color);
   height: 2px;
@@ -793,7 +795,7 @@ width: 50% !important;
 .explore_btn p::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "Explore";
+  content: "";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);

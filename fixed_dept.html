@@ -107,20 +107,7 @@
                  <button id="inquiry-btn" class="explore_btn" 
             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_inquiry" class="d-none d-sm-block">
   <p>Plan Your Trip</p>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="4"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M14 5l7 7m0 0l-7 7m7-7H3"
-    ></path>
-  </svg>
+ 
 </button>
 
           
@@ -216,12 +203,12 @@
 
 
     <!-- FORM -->
-    <form class="row g-3 align-items-end" id="navSearchForm">
+    <form class="row g-3 align-items-center" id="navSearchForm">
 
       <div class="col-md-3">
         <label class="form-label">Destination</label>
         <select id="destination" class="form-control">
-          <option value="" disabled selected>Where to?</option>
+          <option value="" selected>Search Destination</option>
           <option value="Nepal">Nepal</option>
           <option value="Bhutan">Bhutan</option>
           <option value="Tibet">Tibet</option>
@@ -249,15 +236,9 @@
       </div>
 
       <div class="col-md-3 ">
-        <button type="submit" class="contactButton">
+        <button type="submit" id="inquiry-btn" class="explore_btn">
           Search
-           <div class="iconButton">
-                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
+        
         </button>
       </div>
 
@@ -376,7 +357,7 @@
   <!-- Main Image -->
   <div class="main-image">
     <img src="./assets/images/everestbasecamp.jpg" alt="Everest"class="gallery-img"  />
-    <button class="view-more-btn ">View all photos</button>
+    <button class="view-more-btn gallery-img">View all photos</button>
   </div>
 
   <!-- Thumbnails -->
@@ -470,7 +451,7 @@
     </div>
       <section class="itinerary-section mt-5">
         <div class="tour-itinerary-container">
-    <h2 class="green-title"><span>Trip</span> Itinerary</h2>
+    <h2 class="green-title section-title"><span>Trip</span> Itinerary</h2>
     <div class="accordion itinerary-accordion mx-auto" id="accordionExample">
 
   <!-- Day 01 -->
@@ -569,7 +550,7 @@
 
       <section class="route-map-section mt-5">
        <div class="package_destination_map">
-    <h2 class="green-title"><span>Package</span> Route Map</h2>
+    <h2 class="green-title section-title"><span>Package</span> Route Map</h2>
     <img src="./assets/images/routes.png" alt="routes">
 </div>
       </section>
@@ -682,11 +663,11 @@
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
 
-      <div class="modal-header mx-4">
-        <h5 class="modal- green-title">
+      <div class="modal-header ">
+        <h5 class=" green-title">
           Reserve Your <span class="orange-text">Fixed Departure</span> Trip 
-          <span class="book_before">Book before : 12Aug 2025</span>
         </h5>
+        <p class="book_before">Book before : 12Aug 2025</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
@@ -724,32 +705,32 @@
               <label class="form-label">Address<span>*</span></label>
               <input type="text" class="form-control" >
             </div>
-          </div><div class="row">
-  <!-- Country Selection -->
+          </div>
+       <div class="row">
+  <!-- Country -->
   <div class="col-md-6 mb-3">
     <label class="form-label" for="tripCountry">Country<span>*</span></label>
     <select id="tripCountry" class="form-select" required>
-      <option value="">Select Country</option>
+      <option value="" disabled selected>Select Country</option>
       <option value="NP" data-code="+977">Nepal</option>
       <option value="IN" data-code="+91">India</option>
-      <option value="AE" data-code="+971">UAE</option>
-      <option value="BD" data-code="+880">Bangladesh</option>
-      <option value="LK" data-code="+94">Sri Lanka</option>
+      <option value="US" data-code="+1">United States</option>
+      <!-- add more countries -->
     </select>
   </div>
 
-  <!-- Country Code -->
-  <div class="col-md-1 pe-0 mb-3">
-    <label class="form-label" for="tripCode">Code</label>
-    <input type="text" id="tripCode" class="form-control country-code" readonly>
-  </div>
-
-  <!-- Phone Number -->
-  <div class="col-md-5 ps-0 mb-3">
+  <!-- Code + Phone -->
+  <div class="col-md-6 mb-3">
     <label class="form-label" for="tripPhone">Phone<span>*</span></label>
-    <input type="tel" id="tripPhone" class="form-control" required>
+    <div class="input-group">
+      <!-- Country Code (auto-filled) -->
+      <span class="input-group-text country-code" id="tripCode">+977</span>
+      <!-- Phone Number -->
+      <input type="tel" id="tripPhone" class="form-control" required aria-describedby="tripCode">
+    </div>
   </div>
 </div>
+
 
 
        
@@ -765,7 +746,7 @@
           </div>
 
           <button type="submit" class="btn btn-success w-50">
-            Confirm Fixed Departure Booking
+            Submit
           </button>
 
         </form>
@@ -776,6 +757,105 @@
 </div>
 
 
+<!-- customized modal -->
+<div class="modal fade" id="customizeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title green-title">
+          Customize <span class="orange-text">Your Trip</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <!-- YOUR FORM (unchanged) -->
+        <form id="bookingForm" class="grid-form">
+
+          <!-- ROW 1 -->
+          <div class="two-col full">
+            <div class="form-group">
+              <label>Full Name <span>*</span></label>
+              <input type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label>Address <span>*</span></label>
+              <input type="text" required>
+            </div>
+          </div>
+
+          <!-- ROW 2 -->
+          <div class="two-col full">
+  <!-- Country -->
+  <div class="form-group">
+    <label>Country <span>*</span></label>
+    <select id="customizeCountry" name="country" required>
+      <option value="">Select a country</option>
+      <option value="NP" data-code="+977">Nepal</option>
+      <option value="IN" data-code="+91">India</option>
+      <option value="US" data-code="+1">United States</option>
+      <option value="AU" data-code="+61">Australia</option>
+      <option value="GB" data-code="+44">United Kingdom</option>
+    </select>
+  </div>
+
+  <!-- Phone -->
+  <div class="form-group">
+    <label>Phone <span>*</span></label>
+    <div class="d-flex gap-2">
+      <!-- Auto-filled country code -->
+      <input
+        type="text"
+        id="customizeCountryCode"
+        class="country-code"
+        placeholder="Code"
+        readonly
+        style="max-width:120px"
+      >
+
+      <!-- Phone number -->
+      <input type="tel" id="customizePhone" placeholder="Phone Number" required>
+    </div>
+  </div>
+</div>
+
+
+          <div class="form-group full">
+            <label>Email <span>*</span></label>
+            <input type="email" required>
+          </div>
+
+          <div class="form-group full">
+            <label>Message</label>
+            <textarea rows="3"></textarea>
+          </div>
+
+          <div class="form-check full">
+            <input type="checkbox" required>
+            <label>I am not a robot</label>
+          </div>
+
+          <div class="form-check full">
+            <input type="checkbox" required>
+            <label> <a href="#">Terms and Conditions</a></label>
+          </div>
+
+          <div class="text-center mt-3">
+            <button type="submit" class="confirm-btn">Submit</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
@@ -858,59 +938,49 @@
     <button class="popup-close" id="closePopup">×</button>
 
 
-    <div class="popup-sections">
+   <div class="popup-sections">
 
       <!-- INCLUDE -->
       <div class="popup-column">
         <h3>Include</h3>
-        <ul>
-          <li><span class="icon check">✓</span> Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
-          <li><span class="icon check">✓</span> Meals (Breakfast, Lunch, Dinner – specify type)</li>
-          <li><span class="icon check">✓</span> Guided Tours & Excursions</li>
-          <li><span class="icon check">✓</span> Entry Tickets to Attractions</li>
-          <li><span class="icon check">✓</span> Adventure Activities</li>
-          <li><span class="icon check">✓</span> Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
-          <li><span class="icon check">✓</span> Meals (Breakfast, Lunch, Dinner – specify type)</li>
-          <li><span class="icon check">✓</span> Guided Tours & Excursions</li>
-          <li><span class="icon check">✓</span> Entry Tickets to Attractions</li>
-          <li><span class="icon check">✓</span> Adventure Activities</li>
-          <li><span class="icon check">✓</span> Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
-          <li><span class="icon check">✓</span> Meals (Breakfast, Lunch, Dinner – specify type)</li>
-          <li><span class="icon check">✓</span> Guided Tours & Excursions</li>
-          <li><span class="icon check">✓</span> Entry Tickets to Attractions</li>
-          <li><span class="icon check">✓</span> Adventure Activities</li>
-          <li><span class="icon check">✓</span> Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
-          <li><span class="icon check">✓</span> Meals (Breakfast, Lunch, Dinner – specify type)</li>
-          <li><span class="icon check">✓</span> Guided Tours & Excursions</li>
-          <li><span class="icon check">✓</span> Entry Tickets to Attractions</li>
-          <li><span class="icon check">✓</span> Adventure Activities</li>
+        <ul class="include_popup_check-list">
+         <li>Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
+  <li>Meals (Breakfast, Lunch, Dinner – specify type)</li>
+  <li>Guided Tours & Excursions</li>
+  <li>Entry Tickets to Attractions</li>
+  <li>Adventure Activities</li>
+  <li>Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
+  <li>Meals (Breakfast, Lunch, Dinner – specify type)</li>
+  <li>Guided Tours & Excursions</li>
+  <li>Entry Tickets to Attractions</li>
+  <li>Adventure Activities</li>
+  <li>Accommodation (Hotel, Resort, Villa, Camping, etc.)</li>
+  <li>Meals (Breakfast, Lunch, Dinner – specify type)</li>
+  <li>Guided Tours & Excursions</li>
+  <li>Entry Tickets to Attractions</li>
+  <li>Adventure Activities</li>
         </ul>
       </div>
 
       <!-- EXCLUDE -->
       <div class="popup-column">
         <h3>Exclude</h3>
-        <ul>
-          <li><span class="icon cross">✕</span> Visa Fees & Processing</li>
-          <li><span class="icon cross">✕</span> Personal Expenses</li>
-          <li><span class="icon cross">✕</span> Optional Excursions & Activities</li>
-          <li><span class="icon cross">✕</span> Meals Not Mentioned in Itinerary</li>
-          <li><span class="icon cross">✕</span> Travel Insurance</li>
-          <li><span class="icon cross">✕</span> Visa Fees & Processing</li>
-          <li><span class="icon cross">✕</span> Personal Expenses</li>
-          <li><span class="icon cross">✕</span> Optional Excursions & Activities</li>
-          <li><span class="icon cross">✕</span> Meals Not Mentioned in Itinerary</li>
-          <li><span class="icon cross">✕</span> Travel Insurance</li>
-          <li><span class="icon cross">✕</span> Visa Fees & Processing</li>
-          <li><span class="icon cross">✕</span> Personal Expenses</li>
-          <li><span class="icon cross">✕</span> Optional Excursions & Activities</li>
-          <li><span class="icon cross">✕</span> Meals Not Mentioned in Itinerary</li>
-          <li><span class="icon cross">✕</span> Travel Insurance</li>
-          <li><span class="icon cross">✕</span> Visa Fees & Processing</li>
-          <li><span class="icon cross">✕</span> Personal Expenses</li>
-          <li><span class="icon cross">✕</span> Optional Excursions & Activities</li>
-          <li><span class="icon cross">✕</span> Meals Not Mentioned in Itinerary</li>
-          <li><span class="icon cross">✕</span> Travel Insurance</li>
+        <ul class="exclude_popup_check-list">
+           <li>Visa Fees & Processing</li>
+  <li>Personal Expenses</li>
+  <li>Optional Excursions & Activities</li>
+  <li>Meals Not Mentioned in Itinerary</li>
+  <li>Travel Insurance</li>
+   <li>Visa Fees & Processing</li>
+  <li>Personal Expenses</li>
+  <li>Optional Excursions & Activities</li>
+  <li>Meals Not Mentioned in Itinerary</li>
+  <li>Travel Insurance</li>
+   <li>Visa Fees & Processing</li>
+  <li>Personal Expenses</li>
+  <li>Optional Excursions & Activities</li>
+  <li>Meals Not Mentioned in Itinerary</li>
+  <li>Travel Insurance</li>
         </ul>
       </div>
 
@@ -941,11 +1011,11 @@
     <small>/per person</small>
   </div>
 
-  <ul>
-    <li>✔ Your Safety is Our Top Priority</li>
-    <li>✔ Travel with our experienced local guides</li>
-    <li>✔ The cost will depend on the group size.</li>
-  </ul>
+ <ul class="check-list">
+  <li>Your Safety is Our Top Priority</li>
+  <li>Travel with our experienced local guides</li>
+  <li>The cost will depend on the group size.</li>
+</ul>
 <button  class="book-btn">
   Check Availability
   <span class="iconButton">→</span>
@@ -955,10 +1025,10 @@
 
   
   <div class="price-container">
-   <section class="help-box">
+    <section class="help-box mx-auto">
   <header>
     <button
-  class="customize-btn" id="fixedBookingBtn"
+  class="customize-btn"
   data-bs-toggle="modal"
   data-bs-target="#customizeModal">
   Customize Your Trip
@@ -982,7 +1052,7 @@
 
       <li class="email">
         <i class="fa-solid fa-envelope"></i>
-        <span>support@holidayorganiser.com</span>
+        <span><a href="mailto:himmalagaritravels@gmail.com">Email Us</a></span>
       </li>
     </ul>
   </address>
@@ -1340,7 +1410,6 @@
 </section>
 
 <!-- footer -->
- <!-- footer -->
 <footer class="footer ">
     <div class="container-fluid position-relative">
 
@@ -1410,10 +1479,10 @@
         </p>
 
         <div class="curve-logos d-flex flex-wrap gap-5">
-          <img src="./assets/images/affiliation1.png" alt="">
-          <img src="./assets/images/affiliation2.png" alt="">
-          <img src="./assets/images/affiliation3.png" alt="">
-          <img src="./assets/images/affilisation3.png" alt="">
+         <a href="#"> <img src="./assets/images/affiliation1.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affiliation2.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affiliation3.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affilisation3.png" alt=""></a>
 
         </div>
       </div>
@@ -1460,15 +1529,17 @@
       }
   // Select all country dropdowns
 // Get the country select and code input
-const tripCountry = document.getElementById("tripCountry");
-const tripCode = document.getElementById("tripCode");
+document.addEventListener("DOMContentLoaded", () => {
+  const tripCountry = document.getElementById("tripCountry");
+  const tripCode = document.getElementById("tripCode");
 
-// Auto-fill code when country changes
-tripCountry.addEventListener("change", function() {
-  const selectedOption = this.selectedOptions[0];
-  const code = selectedOption.getAttribute("data-code") || "";
-  tripCode.value = code;
+  tripCountry.addEventListener("change", function() {
+    const selectedOption = this.selectedOptions[0];
+    const code = selectedOption.getAttribute("data-code") || "";
+    tripCode.textContent = code; // update span text
+  });
 });
+
 
   // Get elements
 const customizeCountry = document.getElementById("customizeCountry");
@@ -1478,7 +1549,7 @@ const customizeCountryCode = document.getElementById("customizeCountryCode");
 customizeCountry.addEventListener("change", function() {
   const selectedOption = this.selectedOptions[0];
   const code = selectedOption.getAttribute("data-code") || "";
-  customizeCountryCode.value = code;
+  customizeCountryCode.textContent = code;
 });
 
   const planCountry = document.getElementById("planCountry");
@@ -1487,7 +1558,7 @@ const planCountryCode = document.getElementById("planCountryCode");
 planCountry.addEventListener("change", function() {
   const selected = this.selectedOptions[0];
   const code = selected.getAttribute("data-code") || "";
-  planCountryCode.value = code;
+  planCountryCode.textContent = code;
 });
 
   
@@ -1506,7 +1577,7 @@ planCountry.addEventListener("change", function() {
 
       // Find the input or select with class 'country-code' in the same form
       const codeInput = form.querySelector('.country-code');
-      if (codeInput) codeInput.value = code;
+      if (codeInput) codeInput.textContent = code;
     });
   });
 });

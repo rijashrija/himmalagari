@@ -195,7 +195,7 @@ width: 95%;
     position: relative;
     display: flex;
     font-weight: 400;
-    font-size: 6px;
+    font-size: 18px;
     gap: 0.5rem;
     align-items: center;
   }
@@ -212,7 +212,8 @@ width: 95%;
   position: absolute;
   content: "";
   width: 10px;
-  left: 10;
+    top: clamp(23px, 3.9vw, 33px);
+
   bottom: 10px;
   background: var(--hovered-color);
   height: 2px;
@@ -1392,6 +1393,7 @@ width: 5%;
     color: #333;
     padding: 47px 11px 70px 134px;
     border-radius: 320px 0 0 320px;
+    z-index: 100;
 }
 
 .footer-curve h4 {
@@ -1412,7 +1414,19 @@ width: 5%;
       height: 10%;
     width: 10%;
 }
+.curve-logos {
+  display:flex;
+  gap:40px;
+}
 
+.curve-logos a {
+  display:inline-block;
+}
+
+.curve-logos img {
+  height:70px;
+  width:auto;
+}
 /* COPYRIGHT */
 .footer-bottom {
   text-align: start;
@@ -1420,7 +1434,7 @@ width: 5%;
   opacity: 0.9;
   display: flex;
   flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: flex-start;
     gap: 50px;
 }
 .footer-bottom li{

@@ -35,8 +35,7 @@
 </head>
 <body>
   <section class="scroll-wrapper">
-      <!-- navbar -->
-      <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark">
       <div class="container-fluid">
         <!-- LOGO (ALWAYS) -->
         <a class="navbar-brand" href="./home.html">
@@ -103,20 +102,7 @@
                  <button id="inquiry-btn" class="explore_btn" 
             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_inquiry" class="d-none d-sm-block">
   <p>Plan Your Trip</p>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="4"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M14 5l7 7m0 0l-7 7m7-7H3"
-    ></path>
-  </svg>
+ 
 </button>
 
           
@@ -207,59 +193,49 @@
     </div>
 
     <!-- SEARCH OFFCANVAS -->
-  <div class="bottom-search bottomSearch" id="bottomSearch">
+     <div class="bottom-search bottomSearch" id="bottomSearch">
   <div class="container">
-
-    <!-- FORM -->
-    <form class="row g-3 align-items-end" id="navSearchForm">
-
+    <div class="row g-3 align-items-center" id="navSearchForm">
+      
       <div class="col-md-3">
         <label class="form-label">Destination</label>
-        <select id="destination" class="form-control">
-          <option value="" disabled selected>Where to?</option>
-          <option value="Nepal">Nepal</option>
-          <option value="Bhutan">Bhutan</option>
-          <option value="Tibet">Tibet</option>
+        <select title="destination" class="form-control">
+          <option selected disabled>Where to?</option>
+          <option>Nepal</option>
+          <option>Bhutan</option>
+          <option>Tibet</option>
         </select>
       </div>
 
       <div class="col-md-3">
         <label class="form-label">Activity</label>
-        <select id="activity" class="form-control">
-          <option value="" disabled selected>Select activity</option>
-          <option value="Adventure">Adventure</option>
-          <option value="Relaxation">Relaxation</option>
-          <option value="Culture">Culture</option>
+        <select title="activity" class="form-control">
+          <option selected disabled>Select activity</option>
+          <option>Adventure</option>
+          <option>Relaxation</option>
+          <option>Culture</option>
         </select>
       </div>
 
       <div class="col-md-3">
         <label class="form-label">Duration</label>
-        <select id="duration" class="form-control">
-          <option value="" disabled selected>Select duration</option>
-          <option value="4-5 days">4-5 days</option>
-          <option value="10-15 days">10-15 days</option>
-          <option value="1-3 months">1-3 months</option>
+        <select title="duration" class="form-control">
+          <option selected disabled>Select duration</option>
+          <option>4-5 days</option>
+          <option>10-15 days</option>
+          <option>1-3 months</option>
         </select>
       </div>
-
-     <div class="col-md-3 d-grid">
-            <button class="contactButton">
+<div class="col-md-3 d-grid">
+            <button class="explore_btn" id="inquiry-btn">
               Search
-              <div class="iconButton">
-                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
+            
             </button>
           </div>
 
-    </form>
+    </div>
   </div>
 </div>
-
     <!-- inquiry_offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_inquiry" aria-labelledby="offcanvas_inquiryLabel">
  
@@ -271,19 +247,19 @@
    <div class="offcanvas-body">
     <div class="inquiry_title orange-text">
       <span>Plan</span> Your Trip
-             <form>
+         <form>
   <!-- Packages & Date -->
   <div class="form-row">
     <div class="form-group">
       <label>Packages <span>*</span></label>
-     <select id="country" name="country" required>
-                            <option value="">Select a country</option>
-                            <option value="NP" data-code="+977">Nepal</option>
-                            <option value="IN" data-code="+91">India</option>
-                            <option value="US" data-code="+1">United States</option>
-                            <option value="AU" data-code="+61">Australia</option>
-                            <option value="GB" data-code="+44">United Kingdom</option>
-                        </select>
+      <select required>
+        <option value="">Choose Packages</option>
+        <option>Nepal</option>
+        <option>India</option>
+        <option>UAE</option>
+        <option>Bangladesh</option>
+        <option>Sri Lanka</option>
+      </select>
     </div>
 
     <div class="form-group">
@@ -322,7 +298,7 @@
   <div class="form-row">
     <div class="form-group">
       <label>Country <span class="required">*</span></label>
-    <select id="planCountry" required>
+      <select id="planCountry" required>
     <option value="">Select Country</option>
     <option value="NP" data-code="+977">Nepal</option>
     <option value="IN" data-code="+91">India</option>
@@ -352,7 +328,7 @@
   </div>
  </div>
   
-</div>
+</div> 
 
  
     <!-- PACKAGE LISTING -->
@@ -721,13 +697,8 @@
       
   </div>
   </div>
-  <button class="uiverseButton mx-auto mt-4" id="toggleBtn">
+  <button class="explore_btn inquiry-btn mx-auto mt-4" id="toggleBtn">
     Load More
-    <div class="iconButton">
-      <svg width="24" height="24" viewBox="0 0 24 24">
-        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
-      </svg>
-    </div>
   </button>
 </section>
     <!-- Fixed Departure Booking Modal -->
@@ -897,10 +868,10 @@
         </p>
 
         <div class="curve-logos d-flex flex-wrap gap-5">
-          <img src="./assets/images/affiliation1.png" alt="">
-          <img src="./assets/images/affiliation2.png" alt="">
-          <img src="./assets/images/affiliation3.png" alt="">
-          <img src="./assets/images/affilisation3.png" alt="">
+          <a href="#"><img src="./assets/images/affiliation1.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affiliation2.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affiliation3.png" alt=""></a>
+          <a href="#"><img src="./assets/images/affilisation3.png" alt=""></a>
 
         </div>
       </div>
@@ -943,6 +914,7 @@
   searchtoggleBtn.addEventListener("click", () => {
     bottomSearch.classList.toggle("active");
   });
+  
   
        const planCountry = document.getElementById("planCountry");
 const planCountryCode = document.getElementById("planCountryCode");

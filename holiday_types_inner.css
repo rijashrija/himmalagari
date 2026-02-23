@@ -185,6 +185,24 @@ width: 95%;
     gap: 0.5rem;
     align-items: center;
 }
+.inquiry-btn {
+  background-color: #94ce94;
+  color: #000;
+  border: none;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+
+    font-size: clamp(14px, 1.4%, 20px) !important;
+  padding: clamp(6px, 1vw, 8px) clamp(14px, 2vw, 18px);
+  border-radius: clamp(16px, 2vw, 20px);
+    margin: 10px;
+  height: clamp(36px, 5vw, 42px);
+  gap: clamp(6px, 1vw, 10px);
+
+  display: flex;
+  align-items: center;
+}
 .packages-wrapper .card-content .explore_btn {
     position: absolute;
     top: 31px;
@@ -1472,6 +1490,7 @@ width: 5%;
     color: #333;
     padding: 47px 11px 70px 134px;
     border-radius: 320px 0 0 320px;
+    z-index: 100;
 }
 
 .footer-curve h4 {
@@ -1492,7 +1511,19 @@ width: 5%;
       height: 10%;
     width: 10%;
 }
+.curve-logos {
+  display:flex;
+  gap:40px;
+}
 
+.curve-logos a {
+  display:inline-block;
+}
+
+.curve-logos img {
+  height:70px;
+  width:auto;
+}
 /* COPYRIGHT */
 .footer-bottom {
   text-align: start;

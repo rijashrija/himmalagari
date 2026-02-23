@@ -5,7 +5,7 @@
 }
 
 .green-title{
-    text-align: center;
+    text-align: start;
     color: var(--primary-color);
     font-family: var(--font-poppin);
     font-weight: 600;
@@ -143,12 +143,11 @@ width: 95%;
   height: 85px;
   padding: 0 1.5rem;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
   overflow: visible !important;
   display: flex;
   font-family: var(--font-poppin);
-  background-color: #1C6408;
+  background-color: #1C6408 !important;
 }
 
 
@@ -372,6 +371,7 @@ form button {
 
 .country-code {
   max-width: 90px;
+      height: 39px;
 }
 
 .phone-box {
@@ -957,7 +957,7 @@ width: 95%;
   position: relative;
   display: flex;
   /* Responsive font size */
-    font-size: clamp(10px, 1.2vw, 16px);
+ font-size: clamp(17px, 1.2vw, 20px);
 
     /* Responsive font weight (limited support but works in modern browsers) */
     font-weight: clamp(400, 2vw, 600);
@@ -1550,6 +1550,7 @@ width: 5%;
     color: #333;
     padding: 47px 11px 70px 134px;
     border-radius: 320px 0 0 320px;
+    z-index: 100;
 }
 
 .footer-curve h4 {
@@ -1570,6 +1571,19 @@ width: 5%;
       height: 10%;
     width: 10%;
 }
+.curve-logos {
+  display:flex;
+  gap:40px;
+}
+
+.curve-logos a {
+  display:inline-block;
+}
+
+.curve-logos img {
+  height:70px;
+  width:auto;
+}
 
 /* COPYRIGHT */
 .footer-bottom {
@@ -1578,7 +1592,7 @@ width: 5%;
   opacity: 0.9;
   display: flex;
   flex-wrap: wrap;
-      justify-content: space-evenly;
+     justify-content: flex-start;
     gap: 50px;
 }
 .footer-bottom li{
