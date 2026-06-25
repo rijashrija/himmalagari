@@ -2041,7 +2041,7 @@ background-color: rgba(149, 191, 87, 1);
   background: rgb(226, 252, 231);
   font-family: var(--font-poppin);
   font-size: 14px;
-      /* max-height: 670px; */
+  height: 750px;
 }
 
 
